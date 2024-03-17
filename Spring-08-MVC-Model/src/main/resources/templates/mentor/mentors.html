@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2
+    >welcome to mentor class.</h2>
+<table>
+   <thead>
+   <tr>
+      <td>Name</td>
+      <td>lastName</td>
+      <td>Gender</td>
+   </tr>
+   </thead>
+<tbody>
+<tr>
+    <td th:text="${mentors.get(0).firstName}"></td>
+    <td th:text="${mentors.get(0).lastName}"></td>
+    <td th:text="${mentors.get(0).gender}"></td>
+</tr>
+<tr>
+    <td th:text="${mentors.get(1).firstName}"></td>
+    <td th:text="${mentors.get(1).lastName}"></td>
+    <td th:text="${mentors.get(1).gender}"></td>
+</tr>
+<tr>
+    <td th:text="${mentors.get(2).firstName}"></td>
+    <td th:text="${mentors.get(2).lastName}"></td>
+    <td th:text="${mentors.get(2).gender}"></td>
+
+
+</tr>
+
+</tbody>
+
+
+
+
+
+
+</table>
+
+
+
+</body>
+</html>
