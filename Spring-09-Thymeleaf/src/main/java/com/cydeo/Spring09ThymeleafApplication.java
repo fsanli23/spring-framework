@@ -1,4 +1,4 @@
-package com.cydeo.spring09thymeleaf;
+package com.cydeo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
