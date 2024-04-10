@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,7 +31,7 @@
     <li>C#</li>
 </ol>
 
-<a href="https://google.com">Google </a>
+<a th:text="" href="https://google.com">Google </a>
 
 <table>
     <tr>
@@ -116,7 +116,7 @@
             <td>will@yahoo.com</td>
         </tr>
         <tr>
-            <th scope="row">3</th>
+            <th th:text="" scope="row">3</th>
             <td>Shannon</td>
             <td>Williams</td>
             <td>shannon@yahoo.com</td>
@@ -141,7 +141,7 @@
             <th scope="row">1</th>
             <td>John</td>
             <td>Doe</td>
-            <td>jdoe@gmail.com</td>
+            <td >jdoe@gmail.com</td>
         </tr>
         <tr>
             <th scope="row">2</th>
