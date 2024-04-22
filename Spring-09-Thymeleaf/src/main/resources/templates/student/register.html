@@ -9,18 +9,5 @@
 >welcome new Student</h3>
 <h1 th:text="${students}"></h1>
 <h1 th:text="'welcome '+ ${students.get(0).firstName}"></h1>
-<a th:href="@{https://cydeo.com}"> link</a>
-<a th:href="@{/student/welcome}"> Welcome Page Link</a>
-
-<div th:text="${students.get(0).age > 25 ? 'Eligible' :'not eligible '}"></div>
-
-<div>
-    <span th:if="${students.get(0).state!='texas'}">texas</span>
-    <span th:unless="${students.get(0).getState().equals('tecxas')}">not texas</span>
-
-
-</div>
-
-
 </body>
 </html>
