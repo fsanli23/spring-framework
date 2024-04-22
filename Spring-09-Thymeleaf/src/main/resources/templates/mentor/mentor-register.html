@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="#{spring.application.name}">Title</title>
+</head>
+
+
+<body>
+
+<div align="center">
+    <form  th:action="@{/mentor/confirm}" method="post" th:object="${mentor}">
+
+        <label> First Name</label>
+        <input type="text" id="firstName" th:field="*{firstName}"><br>
+        <label> lastName</label>
+        <input type="text" id="lastName" th:field="*{lastName}"><br>
+        <label> email</label>
+        <input type="text" id="email" th:field="*{email}"><br>
+        <label> gender</label>
+        <input type="radio" value="male" id="male" th:field="*{gender}">
+        <input type="radio" value="female" id="female" th:field="*{gender}"><br>
+        <label> batch</label>
+        <input type="text" id="batch" th:field="*{batch}"><br>
+        <label> graduated</label><br>
+        <input type="checkbox" id="graduated" th:field="*{graduated}"><br>
+        <label>batch number</label>
+        <select th:field="*{batch}">
+            <option th:each="theBacth : ${batchList}" th:value="${theBacth}" th:text="${theBacth}"></option>
+
+        </select><br>
+        <label>company</label>
+        <textarea th:field="*{company}"></textarea> <br>
+        <button type="submit"> submit
+        </button>
+
+
+    </form>
+</div>
+
+</body>
+</html>
